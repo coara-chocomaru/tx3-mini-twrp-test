@@ -1,4 +1,5 @@
 ro.bionic.ld.warning=1
+ro.dynamic.full_size=2147483648
 ro.board.platform=sun50iw9p1
 ro.boot.boot_devices=soc/sdc0.soc/sdc2.soc
 ro.boot.dtbo_idx=0,1,2
