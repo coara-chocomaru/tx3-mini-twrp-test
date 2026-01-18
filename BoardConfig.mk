@@ -13,8 +13,16 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 # BOARD_VNDK_VERSION := current
 TARGET_BUILD_32BIT := true
 TARGET_IS_32_BIT := true
+TARGET_GLOBAL_CFLAGS += -mtune=cortex-a9 -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a9 -mfpu=neon -mfloat-abi=softfp
+
+
 # APEX
 OVERRIDE_TARGET_FLATTEN_APEX := true
+TARGET_NO_RADIOIMAGE := true
+TARGET_NO_BOOTLOADER := true
+TARGET_FORCE_CPU_UPLOAD := true
+
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -25,7 +33,7 @@ TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
-TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT := cortex-a9
 TARGET_CPU_VARIANT_RUNTIME := generic
 TARGET_CPU_ABI_LIST_32_BIT := $(TARGET_CPU_ABI),$(TARGET_CPU_ABI2)
 TARGET_CPU_ABI_LIST := $(TARGET_CPU_ABI_LIST_32_BIT)
@@ -114,7 +122,8 @@ RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TARGET_DISABLE_TRIPLE_BUFFERING := false
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
-
+BOARD_HAS_NO_REAL_SDCARD := false
+TW_DEFAULT_EXTERNAL_STORAGE := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
