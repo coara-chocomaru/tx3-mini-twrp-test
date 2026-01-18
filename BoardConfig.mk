@@ -11,9 +11,6 @@ BOARD_VENDOR := amlogic
 BOARD_DEVICE := p281
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 # BOARD_VNDK_VERSION := current
-TARGET_GLOBAL_CFLAGS += -mtune=cortex-a9 -mfpu=neon -mfloat-abi=softfp
-TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a9 -mfpu=neon -mfloat-abi=softfp
-
 
 # APEX
 OVERRIDE_TARGET_FLATTEN_APEX := true
