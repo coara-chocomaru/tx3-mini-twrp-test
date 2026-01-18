@@ -24,9 +24,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-amlogic
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.product.locale=ja-JP \
-    persist.sys.locale=ja-JP \
-    ro.boot.dynamic_partitions=true \
-    ro.dynamic.full_size=2818572288
+    persist.sys.locale=ja-JP
     
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="eros_p1-userdebug 10 QP1A.191105.004 eng.chenza.20240226.171202 test-keys"
