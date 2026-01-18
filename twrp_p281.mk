@@ -24,7 +24,8 @@ PRODUCT_GMS_CLIENTID_BASE := android-amlogic
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.product.locale=ja-JP \
-    persist.sys.locale=ja-JP
+    persist.sys.locale=ja-JP \
+    ro.boot.hardware=sun50iw9p1
     
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="eros_p1-userdebug 10 QP1A.191105.004 eng.chenza.20240226.171202 test-keys"
