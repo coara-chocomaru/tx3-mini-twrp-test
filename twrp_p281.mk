@@ -11,16 +11,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, device/Amlogic/p281/device.mk)
+$(call inherit-product, device/amlogic/p281/device.mk)
 
 PRODUCT_RELEASE_NAME := p281
 PRODUCT_DEVICE := p281
 PRODUCT_NAME := twrp_p281
-PRODUCT_BRAND := Amlogic
+PRODUCT_BRAND := amlogic
 PRODUCT_MODEL := TX3 Mini-A3
-PRODUCT_MANUFACTURER := Amlogic
+PRODUCT_MANUFACTURER := amlogic
 
-PRODUCT_GMS_CLIENTID_BASE := android-Amlogic
+PRODUCT_GMS_CLIENTID_BASE := android-amlogic
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.product.locale=ja-JP \
