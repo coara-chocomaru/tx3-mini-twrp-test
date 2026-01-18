@@ -7,7 +7,7 @@
 
 DEVICE_PATH := device/amlogic/p281
 BUILD_BROKEN_DUP_RULES := true
-BOARD_VENDOR := Amlogic
+BOARD_VENDOR := amlogic
 BOARD_DEVICE := p281
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 BOARD_VNDK_VERSION := current
