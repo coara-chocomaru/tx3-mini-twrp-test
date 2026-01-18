@@ -2,7 +2,6 @@ LOCAL_PATH := device/amlogic/p281
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_FIRST_API_LEVEL := 29
-PRODUCT_CHARACTERISTICS := tv
 PRODUCT_BUILD_RECOVERY_IMAGE := true
 PRODUCT_BUILD_SYSTEM_IMAGE := false
 PRODUCT_BUILD_BOOT_IMAGE := false
@@ -15,13 +14,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     fastbootd
-    
-PRODUCT_PACKAGES += \
-    otapreopt_script \
-    cppreopts.sh \
-　　 update_engine \
-    update_verifier \
-    update_engine_sideload
 
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
