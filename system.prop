@@ -1,1 +1,6 @@
 ro.bionic.ld.warning=1
+ro.board.platform=sun50iw9p1
+ro.boot.boot_devices=soc/sdc0.soc/sdc2.soc
+ro.boot.dtbo_idx=0,1,2
+ro.boot.dynamic_partitions=true
+ro.boot.hardware=sun50iw9p1
