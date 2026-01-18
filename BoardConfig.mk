@@ -5,7 +5,7 @@
 #
 
 
-DEVICE_PATH := device/Amlogic/p281
+DEVICE_PATH := device/amlogic/p281
 BUILD_BROKEN_DUP_RULES := true
 BOARD_VENDOR := Amlogic
 BOARD_DEVICE := p281
